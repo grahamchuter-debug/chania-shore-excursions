@@ -1,0 +1,205 @@
+[
+  {
+    "date": "2026-04-10",
+    "ship": "Celebrity Apex",
+    "cruiseLine": "Celebrity Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked",
+    "notes": "Greek Isles itinerary — ideal window for Agia Triada & Chania"
+  },
+  {
+    "date": "2026-04-17",
+    "ship": "MSC Lirica",
+    "cruiseLine": "MSC Cruises",
+    "arrival": "07:30",
+    "departure": "17:30",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-04-24",
+    "ship": "Norwegian Jade",
+    "cruiseLine": "Norwegian Cruise Line",
+    "arrival": "08:00",
+    "departure": "19:00",
+    "timeInPort": "11 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-05-08",
+    "ship": "Royal Princess",
+    "cruiseLine": "Princess Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-05-15",
+    "ship": "Costa Fortuna",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "17:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-05-22",
+    "ship": "Azamara Quest",
+    "cruiseLine": "Azamara",
+    "arrival": "08:00",
+    "departure": "20:00",
+    "timeInPort": "12 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked",
+    "notes": "Extended call — time for Agia Triada, Aptera and Old Town"
+  },
+  {
+    "date": "2026-06-05",
+    "ship": "Seabourn Encore",
+    "cruiseLine": "Seabourn",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-06-12",
+    "ship": "Wind Star",
+    "cruiseLine": "Windstar Cruises",
+    "arrival": "07:30",
+    "departure": "17:30",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-06-19",
+    "ship": "Celebrity Infinity",
+    "cruiseLine": "Celebrity Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-07-03",
+    "ship": "MSC Musica",
+    "cruiseLine": "MSC Cruises",
+    "arrival": "08:00",
+    "departure": "19:00",
+    "timeInPort": "11 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked",
+    "notes": "Peak summer — book Agia Triada tours early"
+  },
+  {
+    "date": "2026-07-10",
+    "ship": "Norwegian Dawn",
+    "cruiseLine": "Norwegian Cruise Line",
+    "arrival": "07:00",
+    "departure": "17:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-07-17",
+    "ship": "Silver Moon",
+    "cruiseLine": "Silversea",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-08-07",
+    "ship": "Celebrity Apex",
+    "cruiseLine": "Celebrity Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-08-14",
+    "ship": "Royal Princess",
+    "cruiseLine": "Princess Cruises",
+    "arrival": "08:00",
+    "departure": "19:00",
+    "timeInPort": "11 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-08-21",
+    "ship": "Costa Smeralda",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:30",
+    "departure": "17:30",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-09-04",
+    "ship": "Azamara Onward",
+    "cruiseLine": "Azamara",
+    "arrival": "08:00",
+    "departure": "20:00",
+    "timeInPort": "12 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-09-11",
+    "ship": "Wind Spirit",
+    "cruiseLine": "Windstar Cruises",
+    "arrival": "07:30",
+    "departure": "17:30",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-09-18",
+    "ship": "MSC Lirica",
+    "cruiseLine": "MSC Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-10-02",
+    "ship": "Celebrity Infinity",
+    "cruiseLine": "Celebrity Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "timeInPort": "10 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  },
+  {
+    "date": "2026-10-09",
+    "ship": "Norwegian Jade",
+    "cruiseLine": "Norwegian Cruise Line",
+    "arrival": "08:00",
+    "departure": "17:00",
+    "timeInPort": "9 hours",
+    "terminal": "Souda Bay — Cruise Terminal",
+    "callType": "Docked"
+  }
+]
