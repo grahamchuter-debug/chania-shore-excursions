@@ -37,9 +37,8 @@ export const schedulePorts: ShipSchedulePort[] = [
     slug: "chania",
     name: "Chania (Souda Bay)",
     country: "Crete, Greece",
-    seoTitle: "Chania Cruise Ship Schedule 2026 & 2027",
-    metaDescription:
-      "Chania cruise ship schedule hub. See which ships are in port at Souda Bay and plan Agia Triada visits, Old Town walks and Western Crete excursions around published arrival and departure times.",
+    seoTitle: "Chania Cruise Ship Schedule Overview",
+    metaDescription: "Chania cruise ship schedule hub. See which ships are in port at Souda Bay and plan Agia Triada visits, Old Town walks and Western Crete excursions around…",
     intro:
       "Chania (Souda Bay) is a major Eastern Mediterranean and Greek Isles cruise port with seasonal traffic on island-hopping and Grand Voyage itineraries. Check which ships are scheduled before you book monastery tours, Old Town excursions or food experiences.",
     description:

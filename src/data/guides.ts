@@ -5,8 +5,7 @@ export const guides: GuidePage[] = [
     slug: "why-agia-triada-is-our-editors-choice",
     title: "Why Agia Triada Is Our Editor's Choice",
     seoTitle: "Why Agia Triada Is Our Editor's Choice — Chania Shore Excursions",
-    metaDescription:
-      "Our editorial team compared every Chania shore excursion and chose Agia Triada & Old Town — honest reasoning, trade-offs and who it suits on a Western Crete cruise port day.",
+    metaDescription: "Our editorial team compared every Chania shore excursion and chose Agia Triada & Old Town — honest reasoning, trade-offs and who it suits on a Western Crete…",
     eyebrow: "Editor's Choice",
     tagline:
       "The shore excursion we would book ourselves at Souda Bay — Venetian monastery grace, harbour lanes and return timing that respects all-aboard.",
@@ -1177,8 +1176,7 @@ export const guides: GuidePage[] = [
     slug: "best-chania-excursions-for-families",
     title: "Best Chania Excursions for Families",
     seoTitle: "Best Chania Shore Excursions for Families with Kids",
-    metaDescription:
-      "Family-friendly Chania shore excursions — monastery courtyards, harbour walks, village lunches and pacing tips for cruise passengers with children from Souda Bay.",
+    metaDescription: "Family-friendly Chania shore excursions — monastery courtyards, harbour walks, village lunches and pacing tips for cruise passengers with children from…",
     eyebrow: "Families",
     tagline:
       "Monastery peacocks, harbour ice cream and manageable walking — Chania port days without meltdown pacing.",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { SiteImage } from "@/lib/images";
+import { ResponsiveImage } from "@/components/ResponsiveImage";
 
 interface ImageCardProps {
   href: string;
@@ -22,11 +23,10 @@ export function ImageCard({
     <Link href={href} className={`${className} group block overflow-hidden`}>
       {image && (
         <div className="relative aspect-[16/9] overflow-hidden">
-          <img
-            src={image.src}
-            alt={image.alt}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            loading="lazy"
+          <ResponsiveImage
+            image={image}
+            role="card"
+            imgClassName="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
           <div
             className="absolute inset-0 bg-gradient-to-t from-coastal-900/60 via-transparent to-transparent"

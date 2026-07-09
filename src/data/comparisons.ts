@@ -5,8 +5,7 @@ export const comparisons: ComparisonPage[] = [
     slug: "agia-triada-vs-chania-old-town-only",
     title: "Agia Triada Monastery vs Chania Old Town Only on a Cruise Port Day",
     seoTitle: "Agia Triada vs Chania Old Town Only — Which Fits Your Souda Bay Port Day?",
-    metaDescription:
-      "Agia Triada Monastery or Chania Old Town only from Souda Bay cruise port? Compare drive times, monastery countryside vs Venetian Harbour walking, and when our Editor's Choice combines both.",
+    metaDescription: "Agia Triada Monastery or Chania Old Town only from Souda Bay cruise port? Compare drive times, monastery countryside vs Venetian Harbour walking, and when…",
     eyebrow: "Port day comparison",
     optionA: "Agia Triada Monastery & countryside",
     optionB: "Chania Old Town only",
@@ -109,8 +108,7 @@ export const comparisons: ComparisonPage[] = [
     slug: "small-group-vs-coach-tour",
     title: "Small-Group vs Coach Tours from Chania Cruise Port",
     seoTitle: "Small-Group vs Coach Tours from Souda Bay — Which Fits Your Chania Port Day?",
-    metaDescription:
-      "Small-group or large coach tour from Chania cruise port? Compare group sizes, Akrotiri road access, Chania drop-off pacing, pricing and return-to-ship confidence on a Western Crete port day.",
+    metaDescription: "Small-group or large coach tour from Chania cruise port? Compare group sizes, Akrotiri road access, Chania drop-off pacing, pricing and return-to-ship…",
     eyebrow: "Tour format comparison",
     optionA: "Small-group tour",
     optionB: "Large coach tour",
@@ -213,8 +211,7 @@ export const comparisons: ComparisonPage[] = [
     slug: "diy-vs-guided",
     title: "DIY vs Guided Tours from Chania Cruise Port",
     seoTitle: "DIY vs Guided Tours from Souda Bay — Honest Western Crete Comparison",
-    metaDescription:
-      "Explore Chania independently from Souda Bay or book a guided tour? Compare buses, taxis, Agia Triada access, Old Town navigation and return-to-ship confidence for cruise passengers.",
+    metaDescription: "Explore Chania independently from Souda Bay or book a guided tour? Compare buses, taxis, Agia Triada access, Old Town navigation and return-to-ship…",
     eyebrow: "Travel style comparison",
     optionA: "DIY (bus, taxi, self-guided)",
     optionB: "Guided shore excursion",
@@ -318,8 +315,7 @@ export const comparisons: ComparisonPage[] = [
     slug: "chania-vs-heraklion",
     title: "Chania vs Heraklion on a Western Crete Cruise Port Day",
     seoTitle: "Chania vs Heraklion from Souda Bay — Which Crete Experience Fits Your Port Day?",
-    metaDescription:
-      "Stay in Chania or day-trip to Heraklion from Souda Bay cruise port? Compare drive times, Knossos vs Venetian Harbour, realistic port windows and return-to-ship confidence.",
+    metaDescription: "Stay in Chania or day-trip to Heraklion from Souda Bay cruise port? Compare drive times, Knossos vs Venetian Harbour, realistic port windows and…",
     eyebrow: "Destination comparison",
     optionA: "Chania & Western Crete",
     optionB: "Heraklion & Knossos",
@@ -422,8 +418,7 @@ export const comparisons: ComparisonPage[] = [
     slug: "chania-vs-agios-nikolaos",
     title: "Chania vs Agios Nikolaos on a Western Crete Cruise Port Day",
     seoTitle: "Chania vs Agios Nikolaos from Souda Bay — Harbour Town or Eastern Crete?",
-    metaDescription:
-      "Chania or Agios Nikolaos from Souda Bay cruise port? Compare drive times, Venetian Harbour vs Voulismeni Lake, realistic port windows and why western Crete suits your ship's call.",
+    metaDescription: "Chania or Agios Nikolaos from Souda Bay cruise port? Compare drive times, Venetian Harbour vs Voulismeni Lake, realistic port windows and why western Crete…",
     eyebrow: "Destination comparison",
     optionA: "Chania & Western Crete",
     optionB: "Agios Nikolaos",
@@ -527,8 +522,7 @@ export const comparisons: ComparisonPage[] = [
     slug: "beaches-vs-historic-chania",
     title: "Beach Day vs Historic Chania on a Souda Bay Cruise Port Day",
     seoTitle: "Beaches vs Historic Chania from Souda Bay — Balos, Elafonissi or Old Town?",
-    metaDescription:
-      "Beach day or historic Chania from Souda Bay cruise port? Honest comparison of Balos and Elafonissi drive times versus Venetian Harbour walking — and what fits a standard port window.",
+    metaDescription: "Beach day or historic Chania from Souda Bay cruise port? Honest comparison of Balos and Elafonissi drive times versus Venetian Harbour walking — and what…",
     eyebrow: "Experience comparison",
     optionA: "Beach day (Balos / Elafonissi)",
     optionB: "Historic Chania",
@@ -632,8 +626,7 @@ export const comparisons: ComparisonPage[] = [
     slug: "monastery-vs-beach-day",
     title: "Monastery Day vs Beach Day from Chania Cruise Port",
     seoTitle: "Monastery vs Beach Day from Souda Bay — Agia Triada or Balos & Elafonissi?",
-    metaDescription:
-      "Agia Triada Monastery or a Crete beach day from Souda Bay? Compare Akrotiri countryside vs Balos/Elafonissi distances, port-window realism and our Editor's Choice recommendation.",
+    metaDescription: "Agia Triada Monastery or a Crete beach day from Souda Bay? Compare Akrotiri countryside vs Balos/Elafonissi distances, port-window realism and our Editor's…",
     eyebrow: "Itinerary comparison",
     optionA: "Monastery & countryside day",
     optionB: "Beach day",

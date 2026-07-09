@@ -6,8 +6,16 @@ import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
 const ROOT = join(import.meta.dirname, "..");
+
+function getSiteConfig() {
+  const siteTs = readFileSync(join(ROOT, "src/lib/site.ts"), "utf8");
+  const url = siteTs.match(/url:\s*"([^"]+)"/)?.[1]?.replace(/\/$/, "");
+  const domain = siteTs.match(/domain:\s*"([^"]+)"/)?.[1];
+  if (!url || !domain) throw new Error("Could not parse SITE from src/lib/site.ts");
+  return { url, domain };
+}
 const OUT = join(ROOT, "out");
-const SITE_URL = "https://chaniashoreexcursions.com";
+const { url: SITE_URL, domain: SITE_DOMAIN } = getSiteConfig();
 
 const results = [];
 const pass = (msg) => results.push({ status: "PASS", msg });
@@ -86,7 +94,7 @@ for (const file of htmlFiles) {
 if (canonicalIssues === 0) pass("Canonical tags point to https://chaniashoreexcursions.com (non-www)");
 
 const redirects = readText(join(ROOT, "public/_redirects"));
-if (redirects.includes("www.chaniashoreexcursions.com") && redirects.includes("301")) {
+if (redirects.includes(`www.${SITE_DOMAIN}`) && redirects.includes("301")) {
   pass("WWW → non-WWW redirects configured in public/_redirects");
 } else {
   fail("WWW → non-WWW redirects missing from public/_redirects");

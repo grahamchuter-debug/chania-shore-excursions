@@ -5,8 +5,7 @@ export const excursions: ExcursionPage[] = [
     slug: "agia-triada-monastery-and-chania",
     title: "Agia Triada Monastery & Chania Small Group Experience",
     seoTitle: "Agia Triada Monastery & Chania Shore Excursion — Editor's Choice",
-    metaDescription:
-      "Agia Triada Monastery & Chania — our Editor's Choice small-group shore excursion from Souda Bay. Olive-grove countryside, monastery visit and free time in Chania Old Town with cruise-timed returns and honest drive-time buffers.",
+    metaDescription: "Agia Triada Monastery & Chania — our Editor's Choice small-group shore excursion from Souda Bay. Olive-grove countryside, monastery visit and free time in…",
     category: "Monastery & old town",
     tagline:
       "Cretan olive country, a working monastery and unhurried time in Chania's Venetian Harbour — the excursion our editors recommend for first-time Western Crete cruise calls.",
@@ -164,8 +163,7 @@ export const excursions: ExcursionPage[] = [
     slug: "chania-old-town-walking-tour",
     title: "Chania Old Town Walking Tour",
     seoTitle: "Chania Old Town Walking Tour — Shore Excursion from Souda Bay",
-    metaDescription:
-      "Explore Chania's Venetian Harbour, lighthouse and market lanes on foot — a walking shore excursion from Souda Bay with cruise-timed returns and honest shuttle logistics.",
+    metaDescription: "Explore Chania's Venetian Harbour, lighthouse and market lanes on foot — a walking shore excursion from Souda Bay with cruise-timed returns and honest…",
     category: "Walking tour",
     tagline:
       "Venetian Harbour, the lighthouse and Ottoman-era lanes — on foot for passengers who want Chania itself rather than a motorway day to distant beaches.",
@@ -480,8 +478,7 @@ export const excursions: ExcursionPage[] = [
     slug: "relaxed-harbour-day",
     title: "Relaxed Chania Harbour Day",
     seoTitle: "Relaxed Chania Harbour Day — Short Port Call Shore Excursion",
-    metaDescription:
-      "A gentle Chania harbour day from Souda Bay — Venetian waterfront, lighthouse and café time for passengers on tight port windows with high return-to-ship confidence.",
+    metaDescription: "A gentle Chania harbour day from Souda Bay — Venetian waterfront, lighthouse and café time for passengers on tight port windows with high return-to-ship…",
     category: "Harbour & leisure",
     tagline:
       "Unhurried harbour time, waterfront coffee and Old Town lanes — designed for short port calls when bigger excursions simply do not fit.",
@@ -638,8 +635,7 @@ export const excursions: ExcursionPage[] = [
     slug: "private-western-crete-tour",
     title: "Private Western Crete Tour",
     seoTitle: "Private Chania Shore Excursion — Custom Western Crete Port Day",
-    metaDescription:
-      "Build a private Western Crete port day — Agia Triada, Chania Old Town, Aptera, villages or food stops on your schedule with a dedicated guide and cruise-timed returns from Souda Bay.",
+    metaDescription: "Build a private Western Crete port day — Agia Triada, Chania Old Town, Aptera, villages or food stops on your schedule with a dedicated guide and…",
     category: "Private",
     tagline:
       "Your itinerary, your pace — a dedicated guide and vehicle for groups who want full flexibility on a Chania port day.",
@@ -715,8 +711,7 @@ export const excursions: ExcursionPage[] = [
     slug: "cretan-olive-oil-experience",
     title: "Cretan Olive Oil Experience",
     seoTitle: "Cretan Olive Oil Shore Excursion — Tasting Tour from Chania Cruise Port",
-    metaDescription:
-      "Visit an olive grove and mill, taste award-winning Cretan olive oil and learn production from tree to bottle on a shore excursion from Souda Bay — register interest for departures.",
+    metaDescription: "Visit an olive grove and mill, taste award-winning Cretan olive oil and learn production from tree to bottle on a shore excursion from Souda Bay — register…",
     category: "Food & agriculture",
     tagline:
       "Crete's liquid gold — grove walks, mill visits and guided tastings for passengers who want agricultural Crete beyond harbour restaurants.",
@@ -792,8 +787,7 @@ export const excursions: ExcursionPage[] = [
     slug: "winery-and-vineyard-tour",
     title: "Winery & Vineyard Tour",
     seoTitle: "Cretan Winery Shore Excursion — Wine Tasting from Chania Cruise Port",
-    metaDescription:
-      "Discover Cretan vineyards, indigenous grape varieties and cellar tastings on a guided shore excursion from Souda Bay — Vidiano, Vilana and cruise-timed returns. Register interest for departures.",
+    metaDescription: "Discover Cretan vineyards, indigenous grape varieties and cellar tastings on a guided shore excursion from Souda Bay — Vidiano, Vilana and cruise-timed…",
     category: "Food & wine",
     tagline:
       "Mountain vineyards and indigenous Cretan grapes — wine country without the unrealistic drive times of west-coast beach excursions.",
@@ -870,8 +864,7 @@ export const excursions: ExcursionPage[] = [
     slug: "balos-lagoon-excursion",
     title: "Balos Lagoon Excursion",
     seoTitle: "Balos Lagoon Shore Excursion from Chania Cruise Port",
-    metaDescription:
-      "Visit Balos Lagoon's turquoise waters and Gramvousa peninsula on a shore excursion from Souda Bay — honest drive-time advice and cruise-timed returns for Western Crete cruise passengers.",
+    metaDescription: "Visit Balos Lagoon's turquoise waters and Gramvousa peninsula on a shore excursion from Souda Bay — honest drive-time advice and cruise-timed returns for…",
     category: "Beach & nature",
     tagline:
       "Crete's most photographed lagoon — turquoise shallows and raw west-coast scenery for passengers on long port calls who accept the drive time honestly.",

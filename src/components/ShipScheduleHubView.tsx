@@ -40,7 +40,7 @@ export function ShipScheduleHubView({ port }: { port: ShipSchedulePort }) {
 
       {!hasData && (
         <div className="mb-8 rounded-xl border border-amber-200 bg-amber-50 p-6">
-          <p className="font-medium text-amber-950">Schedule data coming soon</p>
+          <p className="font-medium text-amber-950">No ships are listed for this schedule period yet</p>
           <p className="mt-2 text-sm text-amber-900">
             Verified ship calls for {port.name} are being imported. Browse {SCHEDULE_YEARS.join(" and ")}{" "}
             schedule pages below, confirm times with your cruise line, and explore our{" "}

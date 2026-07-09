@@ -1,9 +1,14 @@
 export interface SiteImage {
   src: string;
   alt: string;
+  base: string;
 }
 
 const B = "/images";
+
+function img(base: string, alt: string): SiteImage {
+  return { base, src: `${B}/${base}.jpg`, alt };
+}
 
 export const siteImages = {
   hero: {
@@ -25,22 +30,22 @@ export const siteImages = {
 } as const;
 
 export const subjectImages: Record<string, SiteImage> = {
-  chania: { src: `${B}/chania.jpg`, alt: "Chania Old Town and Venetian Harbour, Western Crete" },
-  harbour: { src: `${B}/venetian-harbour.jpg`, alt: "Venetian Harbour Chania with colourful waterfront buildings" },
-  lighthouse: { src: `${B}/lighthouse.jpg`, alt: "Chania lighthouse at the entrance to the Venetian Harbour" },
-  monastery: { src: `${B}/agia-triada.jpg`, alt: "Agia Triada Monastery on the Akrotiri peninsula near Chania" },
-  olive: { src: `${B}/olive-grove.jpg`, alt: "Olive groves on the Akrotiri peninsula near Chania, Crete" },
-  mountains: { src: `${B}/white-mountains.jpg`, alt: "White Mountains viewed from Western Crete" },
-  oldtown: { src: `${B}/old-town.jpg`, alt: "Chania Old Town lanes and Venetian architecture" },
-  market: { src: `${B}/market.jpg`, alt: "Chania municipal market stalls on a cruise port day" },
-  food: { src: `${B}/cretan-food.jpg`, alt: "Traditional Cretan dakos and meze on a Chania port day" },
-  wine: { src: `${B}/cretan-wine.jpg`, alt: "Cretan wine tasting near Chania, Western Crete" },
-  aptera: { src: `${B}/ancient-aptera.jpg`, alt: "Ancient Aptera archaeological site above Souda Bay" },
-  villages: { src: `${B}/village.jpg`, alt: "Traditional village in the foothills of the White Mountains, Crete" },
-  beach: { src: `${B}/beach.jpg`, alt: "Cretan coastline near Chania, Western Crete" },
-  family: { src: `${B}/family.jpg`, alt: "Family-friendly sightseeing at Chania harbour from a cruise ship" },
-  private: { src: `${B}/private.jpg`, alt: "Private Western Crete tour vehicle on a Chania port day" },
-  history: { src: `${B}/history.jpg`, alt: "Venetian and Ottoman architecture in historic Chania Old Town" },
+  chania: { base: "chania", src: `${B}/chania.jpg`, alt: "Chania Old Town and Venetian Harbour, Western Crete" },
+  harbour: { base: "venetian-harbour", src: `${B}/venetian-harbour.jpg`, alt: "Venetian Harbour Chania with colourful waterfront buildings" },
+  lighthouse: { base: "lighthouse", src: `${B}/lighthouse.jpg`, alt: "Chania lighthouse at the entrance to the Venetian Harbour" },
+  monastery: { base: "agia-triada", src: `${B}/agia-triada.jpg`, alt: "Agia Triada Monastery on the Akrotiri peninsula near Chania" },
+  olive: { base: "olive-grove", src: `${B}/olive-grove.jpg`, alt: "Olive groves on the Akrotiri peninsula near Chania, Crete" },
+  mountains: { base: "white-mountains", src: `${B}/white-mountains.jpg`, alt: "White Mountains viewed from Western Crete" },
+  oldtown: { base: "old-town", src: `${B}/old-town.jpg`, alt: "Chania Old Town lanes and Venetian architecture" },
+  market: { base: "market", src: `${B}/market.jpg`, alt: "Chania municipal market stalls on a cruise port day" },
+  food: { base: "cretan-food", src: `${B}/cretan-food.jpg`, alt: "Traditional Cretan dakos and meze on a Chania port day" },
+  wine: { base: "cretan-wine", src: `${B}/cretan-wine.jpg`, alt: "Cretan wine tasting near Chania, Western Crete" },
+  aptera: { base: "ancient-aptera", src: `${B}/ancient-aptera.jpg`, alt: "Ancient Aptera archaeological site above Souda Bay" },
+  villages: { base: "village", src: `${B}/village.jpg`, alt: "Traditional village in the foothills of the White Mountains, Crete" },
+  beach: { base: "beach", src: `${B}/beach.jpg`, alt: "Cretan coastline near Chania, Western Crete" },
+  family: { base: "family", src: `${B}/family.jpg`, alt: "Family-friendly sightseeing at Chania harbour from a cruise ship" },
+  private: { base: "private", src: `${B}/private.jpg`, alt: "Private Western Crete tour vehicle on a Chania port day" },
+  history: { base: "history", src: `${B}/history.jpg`, alt: "Venetian and Ottoman architecture in historic Chania Old Town" },
 };
 
 function pick(key: string): SiteImage {
@@ -209,8 +214,8 @@ export function getComparisonOgImage(slug: string): SiteImage {
 }
 
 export const heroShowcaseImages = [
-  { src: `${B}/venetian-harbour.jpg`, alt: "Venetian Harbour — Chania's iconic waterfront on a cruise port day" },
-  { src: `${B}/lighthouse.jpg`, alt: "Chania lighthouse at the harbour entrance" },
-  { src: `${B}/old-town.jpg`, alt: "Chania Old Town — Venetian lanes and Ottoman architecture" },
-  { src: `${B}/white-mountains.jpg`, alt: "White Mountains — Western Crete landscapes from Chania" },
+  { base: "venetian-harbour", src: `${B}/venetian-harbour.jpg`, alt: "Venetian Harbour — Chania's iconic waterfront on a cruise port day" },
+  { base: "lighthouse", src: `${B}/lighthouse.jpg`, alt: "Chania lighthouse at the harbour entrance" },
+  { base: "old-town", src: `${B}/old-town.jpg`, alt: "Chania Old Town — Venetian lanes and Ottoman architecture" },
+  { base: "white-mountains", src: `${B}/white-mountains.jpg`, alt: "White Mountains — Western Crete landscapes from Chania" },
 ] as const;

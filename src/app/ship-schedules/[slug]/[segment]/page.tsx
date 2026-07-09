@@ -52,7 +52,7 @@ export async function generateMetadata({
   const year = parseScheduleYear(segment);
   if (year) {
     return buildMetadata({
-      title: `${port.name} Cruise Ship Schedule ${year}`,
+      title: `${port.name} Cruise Ship Schedule ${year} — Calendar`,
       description: `${port.name} cruise ship arrivals and departures for ${year}. Plan shore excursions around published port times.`,
       path: portYearPath(slug, year),
     });
@@ -118,7 +118,7 @@ export default async function ShipScheduleSegmentPage({
 
             {entries.length === 0 && (
               <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-6">
-                <p className="font-medium text-amber-950">Schedule data coming soon</p>
+                <p className="font-medium text-amber-950">No ships are listed for this schedule period yet</p>
                 <p className="mt-2 text-sm text-amber-900">
                   We are importing verified {year} ship calls for {port.name}. Check back soon or confirm
                   times with your cruise line before booking excursions.
