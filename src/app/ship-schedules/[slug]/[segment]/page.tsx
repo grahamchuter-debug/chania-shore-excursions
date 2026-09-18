@@ -86,6 +86,7 @@ export default async function ShipScheduleSegmentPage({
 
   if (year) {
     const entries = getScheduleEntriesForYear(slug, year);
+    if (!entries.length) notFound();
     const monthKeys = getMonthsWithEntries(entries);
 
     const breadcrumbs = [
