@@ -12,18 +12,22 @@ function img(base: string, alt: string): SiteImage {
 
 export const siteImages = {
   hero: {
+    base: "hero-home",
     src: `${B}/hero-home.jpg`,
     alt: "Chania Venetian Harbour with lighthouse and Old Town, Crete",
   },
   ogDefault: {
+    base: "og-default",
     src: `${B}/og-default.jpg`,
     alt: "Chania cruise port with Venetian Harbour and White Mountains, Western Crete",
   },
   logo: {
+    base: "logo-mark",
     src: `${B}/logo-mark.svg`,
     alt: "Chania Shore Excursions logo",
   },
   port: {
+    base: "cruise-port",
     src: `${B}/cruise-port.jpg`,
     alt: "Souda Bay cruise port and harbour, Chania, Crete",
   },
@@ -101,6 +105,7 @@ export function getExcursionImage(slug: string): SiteImage {
 }
 
 export const excursionsHubImage: SiteImage = {
+  base: "agia-triada",
   src: `${B}/agia-triada.jpg`,
   alt: "Chania shore excursions hub — Agia Triada Monastery, Venetian Harbour and Western Crete cruise port days",
 };
