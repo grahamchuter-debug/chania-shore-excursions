@@ -16,6 +16,7 @@ export function ComparisonArticle({ page }: { page: ComparisonPage }) {
   const image = getComparisonImage(page.slug);
   const relatedGuides = page.relatedGuideSlugs.map((s) => getGuideBySlug(s)).filter(Boolean);
   const relatedComparisons = comparisons.filter((c) => c.slug !== page.slug).slice(0, 3);
+  const primaryIndex = page.primaryExcursionSlug ? (page.relatedExcursionSlugs ?? []).indexOf(page.primaryExcursionSlug) : -1;
 
   const breadcrumbs = [
     { name: "Home", path: "/" },
@@ -65,11 +66,11 @@ export function ComparisonArticle({ page }: { page: ComparisonPage }) {
 
           {page.relatedExcursionSlugs && page.relatedExcursionSlugs.length > 0 && (
             <div className="mt-10 flex flex-wrap gap-3">
-              {page.relatedExcursionSlugs.map((slug) => {
+              {page.relatedExcursionSlugs.map((slug, i) => {
                 const e = getExcursionBySlug(slug);
                 if (!e) return null;
                 return (
-                  <Link key={slug} href={`/shore-excursions/${slug}`} className="btn-secondary text-sm">
+                  <Link key={slug} href={`/shore-excursions/${slug}`} className={i === primaryIndex ? "btn-primary text-sm" : "btn-secondary text-sm"}>
                     {e.editorsChoice ? "Editor's Choice: " : ""}{e.title}
                   </Link>
                 );
@@ -106,7 +107,7 @@ export function ComparisonArticle({ page }: { page: ComparisonPage }) {
           )}
 
           <div className="mt-10 flex flex-wrap gap-3">
-            <Link href="/cruise-planner" className="btn-primary">Build my cruise plan</Link>
+            <Link href="/cruise-planner" className={primaryIndex === -1 ? "btn-primary" : "btn-secondary"}>Build my cruise plan</Link>
             <Link href="/enquire" className="btn-secondary">Enquire</Link>
           </div>
 

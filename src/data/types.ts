@@ -121,7 +121,16 @@ export interface GuidePage {
   faqs: FAQ[];
   relatedGuideSlugs: string[];
   relatedExcursionSlugs?: string[];
+  /** Related excursion whose button is styled as the page's primary call to action. */
+  primaryExcursionSlug?: string;
+  /** Links the first occurrence of `text` in the body or section paragraphs, without changing the wording. */
+  inlineLinks?: InlineLink[];
   imageKey?: string;
+}
+
+export interface InlineLink {
+  text: string;
+  href: string;
 }
 
 export interface ComparisonRow {
@@ -147,5 +156,7 @@ export interface ComparisonPage {
   faqs: FAQ[];
   relatedGuideSlugs: string[];
   relatedExcursionSlugs?: string[];
+  /** Related excursion whose button is styled as the page's primary call to action. */
+  primaryExcursionSlug?: string;
   imageKey?: string;
 }

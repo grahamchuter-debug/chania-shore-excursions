@@ -84,6 +84,7 @@ export const guides: GuidePage[] = [
       "best-things-to-do-in-chania-from-a-cruise-ship",
     ],
     relatedExcursionSlugs: ["agia-triada-monastery-and-chania", "agia-triada-monastery-and-chania", "private-western-crete-tour"],
+    primaryExcursionSlug: "agia-triada-monastery-and-chania",
     imageKey: "monastery",
   },
   {
@@ -141,6 +142,7 @@ export const guides: GuidePage[] = [
       "one-day-in-chania-from-a-cruise-ship",
     ],
     relatedExcursionSlugs: ["chania-old-town-walking-tour", "agia-triada-monastery-and-chania", "food-and-wine-experience", "private-western-crete-tour"],
+    inlineLinks: [{ text: "Chania old town walking tour", href: "/shore-excursions/chania-old-town-walking-tour" }],
     imageKey: "chania",
   },
   {
@@ -330,6 +332,7 @@ export const guides: GuidePage[] = [
       "best-things-to-do-in-chania-from-a-cruise-ship",
     ],
     relatedExcursionSlugs: ["ancient-aptera-excursion", "agia-triada-monastery-and-chania", "private-western-crete-tour", "ancient-aptera-excursion"],
+    inlineLinks: [{ text: "Ancient Aptera excursion", href: "/shore-excursions/ancient-aptera-excursion" }],
     imageKey: "history",
   },
   {

@@ -102,6 +102,7 @@ export const comparisons: ComparisonPage[] = [
       "chania-old-town-walking-tour",
       "relaxed-harbour-day",
     ],
+    primaryExcursionSlug: "agia-triada-monastery-and-chania",
     imageKey: "monastery",
   },
   {
@@ -724,6 +725,7 @@ export const comparisons: ComparisonPage[] = [
       "elafonissi-beach-excursion",
       "traditional-villages-tour",
     ],
+    primaryExcursionSlug: "agia-triada-monastery-and-chania",
     imageKey: "monastery",
   },
 ];

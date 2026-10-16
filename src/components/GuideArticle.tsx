@@ -1,5 +1,6 @@
 import Link from "next/link";
-import type { GuidePage } from "@/data/types";
+import type { ReactNode } from "react";
+import type { GuidePage, InlineLink } from "@/data/types";
 import { PhotoHeroBand } from "@/components/PhotoHeroBand";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FAQSection } from "@/components/FAQSection";
@@ -10,9 +11,31 @@ import { getGuideImage } from "@/lib/images";
 import { getGuideBySlug, getAllGuideSlugs } from "@/data/guides";
 import { getExcursionBySlug } from "@/data/excursions";
 
+function withInlineLinks(text: string, links: InlineLink[], used: Set<InlineLink>): ReactNode {
+  for (const link of links) {
+    if (used.has(link)) continue;
+    const at = text.indexOf(link.text);
+    if (at === -1) continue;
+    used.add(link);
+    return (
+      <>
+        {text.slice(0, at)}
+        <Link href={link.href} className="font-medium text-coastal-800 underline hover:text-coastal-900">{link.text}</Link>
+        {withInlineLinks(text.slice(at + link.text.length), links, used)}
+      </>
+    );
+  }
+  return text;
+}
+
 export function GuideArticle({ page }: { page: GuidePage }) {
   const image = getGuideImage(page.slug);
   const related = page.relatedGuideSlugs.map((s) => getGuideBySlug(s)).filter(Boolean);
+  const inlineLinks = page.inlineLinks ?? [];
+  const usedLinks = new Set<InlineLink>();
+  const paragraph = (text: string) => withInlineLinks(text, inlineLinks, usedLinks);
+  const relatedExcursions = page.relatedExcursionSlugs?.slice(0, 3) ?? [];
+  const primaryIndex = page.primaryExcursionSlug ? relatedExcursions.indexOf(page.primaryExcursionSlug) : -1;
 
   const breadcrumbs = [
     { name: "Home", path: "/" },
@@ -36,13 +59,13 @@ export function GuideArticle({ page }: { page: GuidePage }) {
           <p className="text-lg leading-relaxed text-gray-700">{page.overview}</p>
 
           <div className="prose-body">
-            {page.body.map((p, i) => <p key={i}>{p}</p>)}
+            {page.body.map((p, i) => <p key={i}>{paragraph(p)}</p>)}
           </div>
 
           {page.sections?.map((s) => (
             <div key={s.heading} className="prose-body">
               <h2>{s.heading}</h2>
-              {s.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
+              {s.paragraphs.map((p, i) => <p key={i}>{paragraph(p)}</p>)}
             </div>
           ))}
 
@@ -88,13 +111,13 @@ export function GuideArticle({ page }: { page: GuidePage }) {
             </div>
           )}
 
-          {page.relatedExcursionSlugs && page.relatedExcursionSlugs.length > 0 && (
+          {relatedExcursions.length > 0 && (
             <div className="mt-10 flex flex-wrap gap-3">
-              {page.relatedExcursionSlugs.slice(0, 3).map((slug) => {
+              {relatedExcursions.map((slug, i) => {
                 const e = getExcursionBySlug(slug);
                 if (!e) return null;
                 return (
-                  <Link key={slug} href={`/shore-excursions/${slug}`} className="btn-secondary text-sm">
+                  <Link key={slug} href={`/shore-excursions/${slug}`} className={i === primaryIndex ? "btn-primary text-sm" : "btn-secondary text-sm"}>
                     {e.title}
                   </Link>
                 );
@@ -117,7 +140,7 @@ export function GuideArticle({ page }: { page: GuidePage }) {
           )}
 
           <div className="mt-10 flex flex-wrap gap-3">
-            <Link href="/cruise-planner" className="btn-primary">Build my cruise plan</Link>
+            <Link href="/cruise-planner" className={primaryIndex === -1 ? "btn-primary" : "btn-secondary"}>Build my cruise plan</Link>
             <Link href="/enquire" className="btn-secondary">Register interest</Link>
           </div>
 
