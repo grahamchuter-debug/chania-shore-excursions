@@ -105,8 +105,8 @@ export function travelAgencySchema() {
       "@type": "ContactPoint",
       email: SITE.email,
       contactType: "customer service",
-      areaServed: "IT",
-      availableLanguage: ["English", "Italian"],
+      areaServed: "GR",
+      availableLanguage: ["English"],
     },
   };
 }
