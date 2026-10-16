@@ -9,7 +9,7 @@ import { PlanningLinks } from "@/components/PlanningLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, faqSchema, articleSchema } from "@/lib/schema";
 import { getExcursionBySlug, getAllExcursionSlugs, excursions } from "@/data/excursions";
-import { getGuideBySlug } from "@/data/guides";
+import { resolveRelatedGuide } from "@/lib/related-guides";
 import { EditorialBadges } from "@/components/EditorialBadges";
 import { getExcursionImage } from "@/lib/images";
 
@@ -30,7 +30,7 @@ export default async function ExcursionDetailPage({ params }: { params: Promise<
   if (!e) notFound();
   const image = getExcursionImage(slug);
   const related = e.relatedExcursionSlugs.map((s) => excursions.find((x) => x.slug === s)).filter(Boolean);
-  const relatedGuides = (e.relatedGuideSlugs ?? []).map((s) => getGuideBySlug(s)).filter(Boolean);
+  const relatedGuides = (e.relatedGuideSlugs ?? []).map((s) => resolveRelatedGuide(s)).filter(Boolean);
   const isPremium = e.editorsChoice && e.whyWeRecommend;
 
   const breadcrumbs = [
