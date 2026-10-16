@@ -2,10 +2,15 @@ import { buildMetadata } from "@/lib/seo";
 import { PageHero } from "@/components/PageHero";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
+import { EnquiryFormShell } from "@/components/EnquiryFormShell";
+import { ExcursionSelect } from "@/components/ExcursionSelect";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
+import { ENQUIRY_SITE_ID } from "@/lib/enquiry";
+import { excursions } from "@/data/excursions";
 
 const path = "/enquire";
+const enquiryProducts = excursions.map(({ slug, title }) => ({ slug, title }));
 
 export const metadata = buildMetadata({
   title: "Enquire / Contact",
@@ -28,37 +33,40 @@ export default function EnquirePage() {
           <Breadcrumbs items={breadcrumbs} />
           <div className="card-feature">
             <p className="text-sm text-gray-700">Agia Triada &amp; Chania and other Chania shore excursions are available to enquire. Use this form to register interest, ask about ship timing or request planning advice for your port day.</p>
-            <form className="mt-6 space-y-4" action={`mailto:${SITE.email}`} method="post" encType="text/plain">
+            <EnquiryFormShell
+              siteId={ENQUIRY_SITE_ID}
+              fallbackEmail={SITE.email}
+              className="mt-6 space-y-4"
+              submitClassName="btn-primary"
+              submitLabel="Send enquiry"
+              successTitle="Thank you — we've received your enquiry"
+              successBody="We'll reply by email, usually within one working day."
+            >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                <input id="name" name="name" type="text" required className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
+                <input id="name" name="name" type="text" required maxLength={100} autoComplete="name" className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input id="email" name="email" type="email" required className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
+                <input id="email" name="email" type="email" required maxLength={254} autoComplete="email" className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" />
               </div>
               <div>
                 <label htmlFor="excursion" className="block text-sm font-medium text-gray-700 mb-1">Excursion interest</label>
-                <select id="excursion" name="excursion" className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm">
-                  <option>Agia Triada &amp; Chania (Editor&apos;s Choice)</option>
-                  <option>Chania Old Town Walking Tour</option>
-                  <option>Food &amp; Wine Experience</option>
-                  <option>Traditional Villages Tour</option>
-                  <option>Ancient Aptera Excursion</option>
-                  <option>Relaxed Harbour Day</option>
-                  <option>Family Day in Chania</option>
-                  <option>Private Western Crete Tour</option>
-                  <option>Cretan Olive Oil Experience</option>
-                  <option>Winery &amp; Vineyard Tour</option>
-                  <option>General planning question</option>
-                </select>
+                <ExcursionSelect products={enquiryProducts} generalLabel="General planning question" />
+              </div>
+              <div>
+                <label htmlFor="cruise" className="block text-sm font-medium text-gray-700 mb-1">Cruise date &amp; ship (optional)</label>
+                <input id="cruise" name="cruise_date_and_ship" type="text" maxLength={200} className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" placeholder="e.g. 15 June 2027, Celebrity Apex" />
+              </div>
+              <div>
+                <label htmlFor="party" className="block text-sm font-medium text-gray-700 mb-1">Party size (optional)</label>
+                <input id="party" name="party_size" type="text" maxLength={100} className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" placeholder="e.g. 2 adults, 1 child" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea id="message" rows={5} className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" placeholder="Tell us about your Chania port day, ship times and which excursion interests you..." />
+                <textarea id="message" name="message" rows={5} required maxLength={5000} className="w-full rounded-lg border border-gray-300 px-4 py-2 text-sm" placeholder="Tell us about your Chania port day, ship times and which excursion interests you..." />
               </div>
-              <button type="submit" className="btn-primary">Send enquiry</button>
-            </form>
+            </EnquiryFormShell>
             <p className="mt-4 text-xs text-gray-500">Or email us directly at {SITE.email}</p>
           </div>
         </div>

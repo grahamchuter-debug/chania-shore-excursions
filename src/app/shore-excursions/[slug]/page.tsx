@@ -10,6 +10,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, faqSchema, articleSchema } from "@/lib/schema";
 import { getExcursionBySlug, getAllExcursionSlugs, excursions } from "@/data/excursions";
 import { resolveRelatedGuide } from "@/lib/related-guides";
+import { enquiryHref } from "@/lib/enquiry";
 import { EditorialBadges } from "@/components/EditorialBadges";
 import { getExcursionImage } from "@/lib/images";
 
@@ -197,7 +198,7 @@ export default async function ExcursionDetailPage({ params }: { params: Promise<
 
           <div className="mt-10 flex flex-wrap gap-3">
             <Link href="/cruise-planner" className="btn-primary">Build my cruise plan</Link>
-            <Link href="/enquire" className="btn-secondary">{e.availability === "available" ? "Enquire / book" : "Register interest"}</Link>
+            <Link href={enquiryHref(slug)} className="btn-secondary">{e.availability === "available" ? "Enquire / book" : "Register interest"}</Link>
           </div>
 
           {relatedGuides.length > 0 && (
