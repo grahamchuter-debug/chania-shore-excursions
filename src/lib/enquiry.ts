@@ -6,6 +6,9 @@ export const ENQUIRY_ENDPOINT =
 /** Query parameter excursion pages use to pre-select their product: `/enquire/?tour=<slug>`. */
 export const ENQUIRY_PRODUCT_PARAM = "tour";
 
+/** Also accepted on /enquire/ (`?excursion=<slug>`); never emitted. `tour` wins when both are present. */
+export const ENQUIRY_PRODUCT_PARAM_ALIAS = "excursion";
+
 export const ENQUIRY_CORE_FIELDS = new Set(["name", "email", "phone", "message", "travelDate", "ship", "guests", "productRef", "website"]);
 
 export interface EnquiryProduct {
@@ -15,6 +18,10 @@ export interface EnquiryProduct {
 
 export function enquiryHref(slug: string): string {
   return `/enquire?${ENQUIRY_PRODUCT_PARAM}=${encodeURIComponent(slug)}`;
+}
+
+export function productRefFromQuery(query: Pick<URLSearchParams, "get">): string | null {
+  return query.get(ENQUIRY_PRODUCT_PARAM) ?? query.get(ENQUIRY_PRODUCT_PARAM_ALIAS);
 }
 
 /** Matches a `?tour=` value against the known products; anything else is ignored. */

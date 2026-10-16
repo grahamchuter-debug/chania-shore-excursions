@@ -6,6 +6,7 @@ import {
   buildEnquiryPayload,
   enquiryHref,
   findEnquiryProduct,
+  productRefFromQuery,
   sendEnquiry,
 } from "@/lib/enquiry";
 
@@ -57,6 +58,36 @@ describe("findEnquiryProduct", () => {
 
   it.each([null, undefined, "", "bogus", "ANCIENT-APTERA-EXCURSION", "../etc", "ancient-aptera-excursion/", "<script>"])("ignores %j", (ref) => {
     expect(findEnquiryProduct(products, ref)).toBeUndefined();
+  });
+});
+
+describe("pre-selection from the /enquire/ query string", () => {
+  const preselected = (search: string) => findEnquiryProduct(products, productRefFromQuery(new URLSearchParams(search)))?.slug;
+
+  it("pre-selects a known ?tour= slug", () => {
+    expect(preselected("?tour=ancient-aptera-excursion")).toBe("ancient-aptera-excursion");
+  });
+
+  it("accepts ?excursion= as an alias", () => {
+    expect(preselected("?excursion=ancient-aptera-excursion")).toBe("ancient-aptera-excursion");
+    expect(preselected("?excursion=balos-lagoon-excursion")).toBe("balos-lagoon-excursion");
+  });
+
+  it.each(["?excursion=bogus", "?excursion=", "?excursion=ANCIENT-APTERA-EXCURSION", "?excursion=%3Cscript%3E", "?tour=bogus", ""])(
+    "falls back to the general option for %j",
+    (search) => {
+      expect(preselected(search)).toBeUndefined();
+    },
+  );
+
+  it("uses tour when both parameters are present", () => {
+    expect(preselected("?tour=balos-lagoon-excursion&excursion=ancient-aptera-excursion")).toBe("balos-lagoon-excursion");
+    expect(preselected("?excursion=ancient-aptera-excursion&tour=balos-lagoon-excursion")).toBe("balos-lagoon-excursion");
+    expect(preselected("?tour=bogus&excursion=ancient-aptera-excursion")).toBeUndefined();
+  });
+
+  it("product CTAs still emit ?tour=", () => {
+    for (const p of products) expect(enquiryHref(p.slug)).toBe(`/enquire?tour=${p.slug}`);
   });
 });
 
