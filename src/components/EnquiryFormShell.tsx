@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent, type ReactNode } from "react";
 import { buildEnquiryPayload, sendEnquiry } from "@/lib/enquiry";
+import { AnalyticsEvents, trackEvent } from "@/lib/analytics";
 
 type Status = { kind: "idle" } | { kind: "submitting" } | { kind: "success"; reference: string } | { kind: "error"; message: string };
 
@@ -56,6 +57,7 @@ export function EnquiryFormShell({ siteId, fallbackEmail, children, className, s
     setFieldErrors({});
     const result = await sendEnquiry(payload);
     if (result.kind === "success") {
+      trackEvent(AnalyticsEvents.enquiry_submitted, { productRef: payload.productRef ?? undefined, path: window.location.pathname });
       setStatus(result);
       idempotencyKey.current = newKey();
       return;

@@ -3,6 +3,8 @@ import { Inter, Playfair_Display } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
+import { AnalyticsClickTracker } from "@/components/Analytics";
+import { CF_WEB_ANALYTICS_TOKEN } from "@/lib/analytics";
 import { organizationSchema, websiteSchema, travelAgencySchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
 import { siteImages } from "@/lib/images";
@@ -35,6 +37,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <AnalyticsClickTracker />
+        {CF_WEB_ANALYTICS_TOKEN && (
+          <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({ token: CF_WEB_ANALYTICS_TOKEN })} />
+        )}
       </body>
     </html>
   );
