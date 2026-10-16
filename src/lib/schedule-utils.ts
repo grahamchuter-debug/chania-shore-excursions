@@ -129,3 +129,18 @@ export function formatMonthLabel(monthKey: string): string {
 export function getEntriesForDate(entries: ScheduleEntry[], date: string): ScheduleEntry[] {
   return entries.filter((e) => e.date === date);
 }
+
+/** Schedule dates are port-local, so "today" is the date in Chania (Europe/Athens), not the visitor's. */
+export const PORT_TIME_ZONE = "Europe/Athens";
+
+/** YYYY-MM-DD for `now` in the given IANA time zone. */
+export function dateInTimeZone(now: Date, timeZone: string = PORT_TIME_ZONE): string {
+  const parts = new Intl.DateTimeFormat("en-CA", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(now);
+  const part = (type: string) => parts.find((p) => p.type === type)?.value ?? "";
+  return `${part("year")}-${part("month")}-${part("day")}`;
+}
+
+export function addDaysToDate(date: string, days: number): string {
+  const [year, month, day] = date.split("-").map(Number);
+  return new Date(Date.UTC(year, month - 1, day + days)).toISOString().slice(0, 10);
+}

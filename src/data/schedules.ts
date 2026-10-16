@@ -1,5 +1,6 @@
 import type { ScheduleEntry, ShipSchedulePort } from "./types";
 import {
+  addDaysToDate,
   filterEntriesByMonth,
   filterEntriesByYear,
   getMonthsWithEntries,
@@ -95,14 +96,12 @@ export function searchSchedulesByShip(query: string): { portSlug: string; entrie
   return results;
 }
 
-export function getTodayTomorrowEntries(slug: string): { today: ScheduleEntry[]; tomorrow: ScheduleEntry[] } {
+/** Calls on `today` (YYYY-MM-DD, port-local) and the day after. */
+export function getTodayTomorrowEntries(slug: string, today: string): { today: ScheduleEntry[]; tomorrow: ScheduleEntry[] } {
   const entries = getScheduleEntries(slug);
-  const today = new Date();
-  const tomorrow = new Date(today);
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const fmt = (d: Date) => d.toISOString().slice(0, 10);
+  const tomorrow = addDaysToDate(today, 1);
   return {
-    today: entries.filter((e) => e.date === fmt(today)),
-    tomorrow: entries.filter((e) => e.date === fmt(tomorrow)),
+    today: entries.filter((e) => e.date === today),
+    tomorrow: entries.filter((e) => e.date === tomorrow),
   };
 }

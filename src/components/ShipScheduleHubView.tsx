@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { ShipSchedulePort } from "@/data/types";
 import {
@@ -17,14 +17,57 @@ import {
   portMonthPath,
   SCHEDULE_YEARS,
   filterEntriesByMonth,
+  dateInTimeZone,
 } from "@/lib/schedule-utils";
 import { hasVerifiedScheduleData } from "@/lib/routes";
+
+const noSubscription = () => () => {};
+
+/**
+ * Port-local date on the client; null in the static HTML so a build-day "today" is never served
+ * as current, and hydration renders the same neutral state before switching to the real date.
+ */
+function usePortToday(): string | null {
+  return useSyncExternalStore(noSubscription, () => dateInTimeZone(new Date()), () => null);
+}
+
+function TodayTomorrow({ port }: { port: ShipSchedulePort }) {
+  const portToday = usePortToday();
+  if (portToday === null) {
+    return (
+      <section className="mb-12" data-today-tomorrow="pending">
+        <h2 className="section-title text-2xl mb-4">Today &amp; Tomorrow</h2>
+        <p className="text-sm text-gray-700">See the Port Calendar below for the ships scheduled on your date.</p>
+      </section>
+    );
+  }
+  const { today, tomorrow } = getTodayTomorrowEntries(port.slug, portToday);
+  return (
+    <section className="mb-12" data-today-tomorrow={portToday}>
+      <h2 className="section-title text-2xl mb-4">Today &amp; Tomorrow</h2>
+      {today.length === 0 && tomorrow.length === 0 && (
+        <p className="text-sm text-gray-700">No ship calls are listed for today or tomorrow (Chania time). See the Port Calendar below for upcoming ships.</p>
+      )}
+      {today.length > 0 && (
+        <div className="mb-4">
+          <h3 className="font-semibold text-gray-900 mb-2">Today&apos;s Ships</h3>
+          <ScheduleTable entries={today} portName={port.name} />
+        </div>
+      )}
+      {tomorrow.length > 0 && (
+        <div>
+          <h3 className="font-semibold text-gray-900 mb-2">Tomorrow&apos;s Ships</h3>
+          <ScheduleTable entries={tomorrow} portName={port.name} />
+        </div>
+      )}
+    </section>
+  );
+}
 
 export function ShipScheduleHubView({ port }: { port: ShipSchedulePort }) {
   const entries = getScheduleEntries(port.slug);
   const hasData = hasVerifiedScheduleData(port.slug);
   const monthKeys = getMonthsWithEntries(entries);
-  const { today, tomorrow } = getTodayTomorrowEntries(port.slug);
   const [shipQuery, setShipQuery] = useState("");
   const [lineQuery, setLineQuery] = useState("");
   const searchResults = shipQuery
@@ -57,23 +100,7 @@ export function ShipScheduleHubView({ port }: { port: ShipSchedulePort }) {
         cruise line before booking excursions or transfers.
       </div>
 
-      {(today.length > 0 || tomorrow.length > 0) && (
-        <section className="mb-12">
-          <h2 className="section-title text-2xl mb-4">Today &amp; Tomorrow</h2>
-          {today.length > 0 && (
-            <div className="mb-4">
-              <h3 className="font-semibold text-gray-900 mb-2">Today&apos;s Ships</h3>
-              <ScheduleTable entries={today} portName={port.name} />
-            </div>
-          )}
-          {tomorrow.length > 0 && (
-            <div>
-              <h3 className="font-semibold text-gray-900 mb-2">Tomorrow&apos;s Ships</h3>
-              <ScheduleTable entries={tomorrow} portName={port.name} />
-            </div>
-          )}
-        </section>
-      )}
+      {hasData && <TodayTomorrow port={port} />}
 
       <section className="mb-12 grid gap-4 sm:grid-cols-2">
         <div>
