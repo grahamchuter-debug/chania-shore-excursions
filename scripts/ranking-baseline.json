@@ -1,0 +1,267 @@
+{
+  "source": "/tmp/chania-baseline-out-e405089",
+  "pages": {
+    "/": {
+      "title": "Chania Shore Excursions &amp; Cruise Port Planning",
+      "metaDescription": "The definitive Chania cruise planning authority — Agia Triada Monastery, Venetian Harbour, Cretan food and wine, Western Crete villages, ship schedules and a personalised cruise planner for Souda Bay port days.",
+      "canonical": "https://chaniashoreexcursions.com/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania Shore Excursions &amp; Cruise Port Planning"
+      ]
+    },
+    "/ancient-aptera/": {
+      "title": "Ancient Aptera from Souda Bay Cruise Port — Visitor Guide | Chania Shore Excursions",
+      "metaDescription": "Visit Ancient Aptera on a Chania cruise port day — Greek and Roman ruins above Souda Bay, drive time from the terminal and how to combine with Chania old town.",
+      "canonical": "https://chaniashoreexcursions.com/ancient-aptera/",
+      "robots": "index, follow",
+      "h1": [
+        "Ancient Aptera — Cruise Passenger Guide"
+      ]
+    },
+    "/chania-old-town-walking-guide/": {
+      "title": "Chania Old Town Walking Guide — Souda Bay Cruise Port | Chania Shore Excursions",
+      "metaDescription": "Explore Chania old town on a cruise port day — Venetian lanes, Ottoman architecture, walking routes from Souda Bay and what fits your ship schedule.",
+      "canonical": "https://chaniashoreexcursions.com/chania-old-town-walking-guide/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania Old Town — Cruise Passenger Walking Guide"
+      ]
+    },
+    "/cruise-port-guide/": {
+      "title": "Chania Cruise Port Guide | Chania Shore Excursions",
+      "metaDescription": "The complete Chania cruise port guide — Souda Bay terminal, drive times to Old Town and Agia Triada Monastery, harbour access and return-to-ship timing for cruise passengers.",
+      "canonical": "https://chaniashoreexcursions.com/cruise-port-guide/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania Cruise Port Guide"
+      ]
+    },
+    "/ship-schedules/": {
+      "title": "Chania Cruise Ship Schedules | Chania Shore Excursions",
+      "metaDescription": "Chania cruise ship schedules by year and month. See which ships are in port at Souda Bay before booking Agia Triada tours, Old Town excursions or food experiences.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania Cruise Ship Schedules"
+      ]
+    },
+    "/ship-schedules/chania/": {
+      "title": "Chania Cruise Ship Schedule Overview | Chania Shore Excursions",
+      "metaDescription": "Chania cruise ship schedule hub. See which ships are in port at Souda Bay and plan Agia Triada visits, Old Town walks and Western Crete excursions around…",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) Cruise Ship Schedule"
+      ]
+    },
+    "/ship-schedules/chania/2026/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule 2026 — Calendar | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship arrivals and departures for 2026. Plan shore excursions around published port times.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/2026/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — 2026 Cruise Schedule"
+      ]
+    },
+    "/ship-schedules/chania/2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule 2027 — Calendar | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship arrivals and departures for 2027. Plan shore excursions around published port times.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — 2027 Cruise Schedule"
+      ]
+    },
+    "/ship-schedules/chania/april-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — April 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for April 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/april-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — April 2027"
+      ]
+    },
+    "/ship-schedules/chania/august-2026/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — August 2026 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for August 2026. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/august-2026/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — August 2026"
+      ]
+    },
+    "/ship-schedules/chania/august-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — August 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for August 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/august-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — August 2027"
+      ]
+    },
+    "/ship-schedules/chania/december-2026/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — December 2026 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for December 2026. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/december-2026/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — December 2026"
+      ]
+    },
+    "/ship-schedules/chania/december-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — December 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for December 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/december-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — December 2027"
+      ]
+    },
+    "/ship-schedules/chania/february-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — February 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for February 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/february-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — February 2027"
+      ]
+    },
+    "/ship-schedules/chania/january-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — January 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for January 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/january-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — January 2027"
+      ]
+    },
+    "/ship-schedules/chania/july-2026/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — July 2026 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for July 2026. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/july-2026/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — July 2026"
+      ]
+    },
+    "/ship-schedules/chania/july-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — July 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for July 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/july-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — July 2027"
+      ]
+    },
+    "/ship-schedules/chania/june-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — June 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for June 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/june-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — June 2027"
+      ]
+    },
+    "/ship-schedules/chania/march-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — March 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for March 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/march-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — March 2027"
+      ]
+    },
+    "/ship-schedules/chania/may-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — May 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for May 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/may-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — May 2027"
+      ]
+    },
+    "/ship-schedules/chania/november-2026/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — November 2026 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for November 2026. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/november-2026/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — November 2026"
+      ]
+    },
+    "/ship-schedules/chania/november-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — November 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for November 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/november-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — November 2027"
+      ]
+    },
+    "/ship-schedules/chania/october-2026/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — October 2026 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for October 2026. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/october-2026/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — October 2026"
+      ]
+    },
+    "/ship-schedules/chania/october-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — October 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for October 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/october-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — October 2027"
+      ]
+    },
+    "/ship-schedules/chania/september-2026/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — September 2026 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for September 2026. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/september-2026/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — September 2026"
+      ]
+    },
+    "/ship-schedules/chania/september-2027/": {
+      "title": "Chania (Souda Bay) Cruise Ship Schedule — September 2027 | Chania Shore Excursions",
+      "metaDescription": "Chania (Souda Bay) cruise ship schedule for September 2027. Verified arrival and departure times for port-day planning.",
+      "canonical": "https://chaniashoreexcursions.com/ship-schedules/chania/september-2027/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania (Souda Bay) — September 2027"
+      ]
+    },
+    "/shore-excursions/": {
+      "title": "Chania Shore Excursions | Chania Shore Excursions",
+      "metaDescription": "Chania shore excursions for cruise passengers — Agia Triada &amp; Chania (Editor&#x27;s Choice), Old Town walks, food and wine, traditional villages and Ancient Aptera.",
+      "canonical": "https://chaniashoreexcursions.com/shore-excursions/",
+      "robots": "index, follow",
+      "h1": [
+        "Chania Shore Excursions"
+      ]
+    },
+    "/shore-excursions/ancient-aptera-excursion/": {
+      "title": "Ancient Aptera Shore Excursion from Chania Cruise Port | Chania Shore Excursions",
+      "metaDescription": "Visit Ancient Aptera&#x27;s Roman ruins, theatre and Souda Bay views on a guided shore excursion from Souda Bay — Cretan history with cruise-timed returns.",
+      "canonical": "https://chaniashoreexcursions.com/shore-excursions/ancient-aptera-excursion/",
+      "robots": "index, follow",
+      "h1": [
+        "Ancient Aptera Excursion"
+      ],
+      "lead": "Ancient Aptera sits on a hill above Souda Bay — one of western Crete&#x27;s most significant archaeological sites, with Roman cisterns, a theatre and panoramic views over the harbour where your ship lies at anchor. This excursion focuses on Aptera with optional brief Chania Old Town time when port windows allow.",
+      "faqSectionSha256": "7d39a4ba240fac26d29c1975ca1d399d9dfe580936273948ef2b311d67341648",
+      "jsonLdSha256": {
+        "Organization": "b20b9b131417269c7c814285c1fe6825b6155e83e2c3d0c8682107a41e97d525",
+        "WebSite": "fbc2a9957029b139f1f46bad4d93a5a214a91d61da7bdc10a350202f96fbca6e",
+        "BreadcrumbList": "90d0f785dede5e7a4484be6793d03345197b10f27a8958d4e785748a8fb320a2",
+        "FAQPage": "d9c0bc3cca56ae2a44d03763f811ca643e442ab649f95a6b844b81c50df63cbd",
+        "Article": "13208f19be8da5b78c221056208db074dcc2a6009b30b2ff242efcb85a1bd52e"
+      },
+      "textOutsideRelatedGuidesSha256": "353ba077105d4d4f3c28153fe47a4364a21cc91a6b5424304d0338b09d5a2fb3"
+    }
+  }
+}

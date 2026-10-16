@@ -11,8 +11,8 @@
     "seo-qa": "node scripts/seo-qa.mjs",
     "test": "vitest run",
     "download-images": "node scripts/fetch-curated-images.mjs && node scripts/fetch-missing-images.mjs",
-    "deploy": "npm run build && wrangler deploy",
-    "pages:deploy": "npm run build && wrangler pages deploy out --project-name=chania-shore-excursions",
+    "deploy": "bash scripts/safe-deploy.sh",
+    "pages:deploy": "bash scripts/safe-deploy.sh",
     "optimize:images": "node scripts/optimize-images.mjs",
     "prebuild": "node scripts/optimize-images.mjs"
   },
