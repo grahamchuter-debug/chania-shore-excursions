@@ -9,6 +9,7 @@
     "lint": "eslint",
     "check-links": "node scripts/check-links.mjs",
     "seo-qa": "node scripts/seo-qa.mjs",
+    "test": "vitest run",
     "download-images": "node scripts/fetch-curated-images.mjs && node scripts/fetch-missing-images.mjs",
     "deploy": "npm run build && wrangler deploy",
     "pages:deploy": "npm run build && wrangler pages deploy out --project-name=chania-shore-excursions",
@@ -34,6 +35,7 @@
     "sharp": "^0.33.5",
     "tailwindcss": "^4",
     "typescript": "^5",
+    "vitest": "^3.2.7",
     "wrangler": "^4.106.0"
   }
 }
